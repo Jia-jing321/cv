@@ -1,1 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>my-resume</title>
+  <meta charset="utf-8" content-type="text/html">
+  <!-- Bootstrap 核心 CSS 文件 -->
+  <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <!--jQuery核心-->
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!--  Bootstrap 核心 JavaScript 文件 -->
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="main.css" rel="stylesheet">
+  <script src="chart.js"></script>
+</head>
+<body class="bg-success" id="person">
+  <header  class="bg-danger" >
+  	<div class="text-center" style="font-size:20px;" >
+  		<ul class="nav nav-pills " style="display:inline-block;">
+  		   	<li class="active" ><a href="#person"><i class="glyphicon glyphicon-user "></i></a></li>
+  		   	<li><a href="#education-point"><i class="glyphicon glyphicon-book"></i></a></li>
+  		   	<li><a href="#skills"><i class="glyphicon glyphicon-stats"></i></a></li>
+  		   	<li><a href="#contact"><i class="glyphicon glyphicon-earphone"></i></a></li>
+  		</ul>
+  	</div>
+  </header>
+  <div class="main">
+  <section id="home" >
+  	   <h1>Damuls.github.com</h1>
+       <span>Web front-end development @lover</span>
+       <div class="bg-primary text-center" id="education-point">
+       	I'm a web-noob ,wish to learn more & more...
+       </div>
+  </section>
+  <section id="education" >
+  	  <div class="container">
+  	    <div class="row">
+	  	 	<div class="col-sm-3 text-right">
+	  	 		<h4>EDUCATION</h4>
 
+	  	 	</div>
+	  	 	<div class="col-sm-6 text-center">
+	  	 		<h4><em>Ship-construct&ocean-engineering<em><h4>
+                <h5><i>&nbsp; At Dalian University of Technology</i></h5>
+                 
+	  	 	</div>
+	  	 	<div class="col-sm-3 text-left">
+	  	 		<sm>Graduate:2017.6</sm>
+	  	 	</div>
+	    </div>
+  	  </div>
+  </section>
+  <section id="skills">
+  	<div class="container">
+			<div class="row">
+					<div class="col-lg-2 col-lg-offset-1">
+						<h5>SKILLS</h5>
+					</div>
+					<div class="col-lg-3 centered">
+						<canvas id="javascript" height="130" width="130"></canvas>
+						<p>Javascript</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 85,
+										color:"#1abc9c"
+									},
+									{
+										value : 15,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-lg-3 centered">
+						<canvas id="html-css" height="130" width="130"></canvas>
+						<p>HTML/css</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 80,
+										color:"#1abc9c"
+									},
+									{
+										value : 20,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("html-css").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-lg-3 centered">
+						<canvas id="jQuery" height="130" width="130"></canvas>
+						<p>jQuery</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 80,
+										color:"#1abc9c"
+									},
+									{
+										value : 20,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("jQuery").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					
+					<div class="col-lg-3 col-lg-offset-3 centered">
+						<canvas id="vue-js" height="130" width="130"></canvas>
+						<p>Vue.js</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 50,
+										color:"#1abc9c"
+									},
+									{
+										value : 50,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("vue-js").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-lg-3 centered">
+						<canvas id="bootstrap" height="130" width="130"></canvas>
+						<p>bootstrap</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 60,
+										color:"#1abc9c"
+									},
+									{
+										value : 40,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-lg-3 centered">
+						<canvas id="nodejs-php" height="130" width="130"></canvas>
+						<p>php/nodejs</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 70,
+										color:"#1abc9c"
+									},
+									{
+										value : 30,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("nodejs-php").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+
+			</div><!--/.row -->
+			<br>
+		</div><!--/.container -->
+
+  </section>
+  </div>
+  <footer id="contact" >
+  	<div class="container">
+  	    <div class="row">
+	  	 	<div class="col-sm-3 text-right">
+	  	 		<h4>CONTACT</h4>
+
+	  	 	</div>
+	  	 	<div class="col-sm-6 ">
+	  	 		<h4>E-mail:<br>573243368@qq.com<h4>
+	  	 		<div class="divider"></div>
+                <h4>Phone:<br>13130435776</h4>
+                 
+	  	 	</div>
+	  	 	<div class="col-sm-3 text-left">
+	  	 		<sm><i class="glyphicon glyphicon-tree-deciduous"></i><i class="glyphicon glyphicon-tree-deciduous"></i><i class="glyphicon glyphicon-tree-deciduous"></i><i class="glyphicon glyphicon-tree-deciduous"></i><i class="glyphicon glyphicon-tree-deciduous"></i></sm>
+	  	 	</div>
+	    </div>
+  	  </div>
+  </footer>
+  <script>
+  	$(
+
+
+  		)
+
+
+  </script>
+</body>
+</html>
+
+    
+  
